@@ -213,26 +213,22 @@ function showAllProduct(){
 	});
 	
 	$('#showdata').on('click', '.item-delete', function(){
-		//var id = $(this).attr('data');
+		
+		var id = $(this).attr('data');
 		//$('#deleteModal').modal('show');
 		//prevent previous handler - unbind()
-		var id = sessionStorage.getItem("id");
+		//var id = sessionStorage.getItem("id");
 		
 			$.ajax({
 				type: 'ajax',
 				method: 'post',
-				async: false,
 				url: 'deleteProduct',
 				data:{productId:id},
 				
 				success: function(response){
-					if(response.success){
-						$('#deleteModal').modal('hide');
-						$('.alert-success').html('Product Deleted successfully').fadeIn().delay(4000).fadeOut('slow');
+					alert('got a response');
 						showAllProd();
-					}else{
-						alert('Error');
-					}
+					
 				},
 				error: function(){
 					alert('Error deleting');
