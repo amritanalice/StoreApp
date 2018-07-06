@@ -1,4 +1,4 @@
-.body {
+body {
 	border: 0;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 16px;
@@ -51,6 +51,28 @@
 	background-image: -ms-linear-gradient(top, #69bfe8 0, #2a8fc7 50%, #077abc 100%)
 }
 
+.editbtn {
+    border: none;
+    background-color: inherit;
+    padding: 2px 2px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.editbtn:hover {background: #eee;}
+
+.trashbtn {
+    border: none;
+    background-color: inherit;
+    padding: 2px 2px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.trashbtn:hover {background: #eee;}
+
 .greenButton, .sharpblueBar {
 	background: #5e87b0;
 	text-shadow: 0 -1px 1px #145072
@@ -79,6 +101,14 @@
 	margin: auto;
 	padding-top: 130px;
 	width: 95%
+}
+
+.container4 {
+	margin: auto;
+	padding-top: 40px;
+	width: 70%;
+	-webkit-align-content: center;
+	align-content: center;
 }
 
 .popupcontentBlock, .popupcontentBlockbottom {
@@ -219,6 +249,27 @@ input[type=submit]:disabled {
 	box-shadow: 1px 2px 4px #333
 }
 
+
+.update_button{
+border:1px solid #ff6262; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:20px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+ background-color: #ff9a9a; background-image: -webkit-gradient(linear, left top, left bottom, from(#ff9a9a), to(#ff4040));
+ background-image: -webkit-linear-gradient(top, #ff9a9a, #ff4040);
+ background-image: -moz-linear-gradient(top, #ff9a9a, #ff4040);
+ background-image: -ms-linear-gradient(top, #ff9a9a, #ff4040);
+ background-image: -o-linear-gradient(top, #ff9a9a, #ff4040);
+ background-image: linear-gradient(to bottom, #ff9a9a, #ff4040);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ff9a9a, endColorstr=#ff4040);
+}
+
+.update_button:hover{
+ border:1px solid #ff3434;
+ background-color: #ff6767; background-image: -webkit-gradient(linear, left top, left bottom, from(#ff6767), to(#ff0d0d));
+ background-image: -webkit-linear-gradient(top, #ff6767, #ff0d0d);
+ background-image: -moz-linear-gradient(top, #ff6767, #ff0d0d);
+ background-image: -ms-linear-gradient(top, #ff6767, #ff0d0d);
+ background-image: -o-linear-gradient(top, #ff6767, #ff0d0d);
+ background-image: linear-gradient(to bottom, #ff6767, #ff0d0d);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ff6767, endColorstr=#ff0d0d);
+}
+
 .alertButtonblue, .blueButton {
 	background: #5e87b0;
 	text-align: center;
@@ -301,6 +352,22 @@ input[type=submit]:disabled {
 .loginButtonblue:focus {
 	outline: 0;
 	border: none
+}
+
+.productAddForm {
+	margin: auto;
+	width: 70%
+	padding: 20px 40px 20px 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	background-image: -moz-linear-gradient(top, #fafafa, #fff, #eee);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fafafa),
+		color-stop(.5, #fff), color-stop(1, #eee));
+	background-image: -ms-linear-gradient(top, #fafafa 0, #fff 50%, #eee 100%);
+	-webkit-box-shadow: 0 0 5px #666;
+	-moz-box-shadow: 0 0 5px #666;
+	box-shadow: 0 0 5px #666
 }
 
 .loginForm {
