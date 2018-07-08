@@ -60,6 +60,16 @@ public class ProductJavaInMemoryStoreDAOImpl implements ProductStoreDao {
 
     }
 
+    public Product getProductById(String userName, Integer productId) throws Exception {
+	Map<Integer, Product> productForUser = this.productStore.get(userName);
+	if (null != productForUser) {
+	    return productForUser.get(productId);
+	} else {
+	    return null;
+	}
+
+    }
+
     public List<Product> getProductListForUser(String userName) {
 	System.out.println("Getting List for user=" + userName);
 	List<Product> productList = new ArrayList<Product>();

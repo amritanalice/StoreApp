@@ -9,20 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class WelcomeController {
     
-    /*@RequestMapping("/")
+    @RequestMapping("/")
 	public String welcome() {
 	return "forward:/ProductsView.html";
-	}*/
-   /* 
-    @RequestMapping("/")
-  	public String welcome() {
-  	return "ProductsView.html";
-  	}*/
+	}
     
-    
-    @RequestMapping("/")
-  	public String welcome() {
-  	return "welcome";
-  	}
 
 }

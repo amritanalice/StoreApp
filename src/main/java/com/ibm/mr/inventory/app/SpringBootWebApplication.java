@@ -6,7 +6,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan("com.ibm.mr.inventory.dao.impl,com.ibm.mr.inventory.app")
+@ComponentScan("com.ibm.mr.inventory.dao.impl,com.ibm.mr.inventory.app,com.ibm.mr.inventory.service.impl")
 @SpringBootApplication(exclude = { SecurityAutoConfiguration.class })
 public class SpringBootWebApplication extends SpringBootServletInitializer {
 

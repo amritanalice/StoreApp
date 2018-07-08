@@ -12,7 +12,7 @@ public class Product {
     private Integer id;
     @JsonView(JsonViews.Public.class)
     private String description;
-
+    @JsonView(JsonViews.Public.class)
     private String imageUrl;
     @JsonView(JsonViews.Public.class)
     private String name;
@@ -108,7 +108,7 @@ public class Product {
     
     public String toString()
     {
-	return this.name+","+this.id+","+this.quantity;
+	return this.name+","+this.id+","+this.quantity+","+this.imageUrl;
     }
 
 }
